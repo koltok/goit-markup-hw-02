@@ -1,7 +1,15 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
   color: #757575;
+  background-color: #FFFFFF;
 }
+
+:root {
+  --brand-color: #212121;
+}
+
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -32,7 +40,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;}
+  color: var(--brand-color);}
 
   .header-link:hover,
   .header-link:active{
@@ -249,4 +257,18 @@ color: #2196F3;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
